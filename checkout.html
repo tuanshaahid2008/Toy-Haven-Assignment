@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Checkout | Toy Haven
+    </title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        🧸 Toy Haven
+      </a>
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+      <nav id="navLinks">
+        <a href="index.html">
+          Home
+        </a>
+        <a href="products.html">
+          Products
+        </a>
+        <a href="wishlist.html">
+          Wishlist
+        </a>
+        <a href="cart.html">
+          Cart (
+          <span id="cartCount">
+            0
+          </span>
+          )
+        </a>
+        <a href="support.html">
+          Support
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <p class="label">
+          FINAL STEP
+        </p>
+        <h1>
+          Checkout
+        </h1>
+        <p>
+          Complete your order securely.
+        </p>
+      </section>
+      <section class="section checkout-layout">
+        <form id="checkoutForm">
+          <div class="form-card">
+            <h2>
+              Delivery Details
+            </h2>
+            <label>
+              Full Name
+              <input id="checkoutName" required=""/>
+            </label>
+            <label>
+              Email Address
+              <input id="checkoutEmail" required="" type="email"/>
+            </label>
+            <label>
+              Delivery Address
+              <textarea id="checkoutAddress" required="" rows="4"></textarea>
+            </label>
+          </div>
+          <div class="form-card">
+            <h2>
+              Payment Method
+            </h2>
+            <label class="radio">
+              <input checked="" name="payment" type="radio" value="Card"/>
+              💳 Card
+            </label>
+            <label class="radio">
+              <input name="payment" type="radio" value="Cash on Delivery"/>
+              💵 Cash on Delivery
+            </label>
+            <div id="cardFields">
+              <label>
+                Card Number
+                <input id="cardNumber" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456"/>
+              </label>
+              <div class="two">
+                <label>
+                  Expiry
+                  <input id="expiry" maxlength="5" placeholder="MM/YY"/>
+                </label>
+                <label>
+                  CVV
+                  <input id="cvv" inputmode="numeric" maxlength="3"/>
+                </label>
+              </div>
+            </div>
+          </div>
+          <button class="btn full" type="submit">
+            Place Order
+          </button>
+          <p class="message" id="checkoutMessage">
+          </p>
+        </form>
+        <aside class="summary">
+          <h2>
+            Order Summary
+          </h2>
+          <div id="checkoutItems">
+          </div>
+          <div class="total">
+            <span>
+              Total
+            </span>
+            <strong id="checkoutTotal">
+              $0.00
+            </strong>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <div class="modal hidden" id="successModal">
+      <div class="success">
+        <div class="check">
+          &checkmark;
+        </div>
+        <h2>
+          Order Placed!
+        </h2>
+        <p>
+          Thank you for shopping with Toy Haven.
+        </p>
+        <a class="btn" href="products.html">
+          Continue Shopping
+        </a>
+      </div>
+    </div>
+    <script src="js/script.js">
+    </script>
+  </body>
+</html>

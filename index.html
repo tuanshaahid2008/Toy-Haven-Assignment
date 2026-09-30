@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Toy Haven - collectible figurines, toys, board games and diecast cars.">
+
+    <meta name="theme-color" content="#6c4ce6">
+
+    <title>Toy Haven | Collect. Play. Enjoy.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%B8%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo"
+       href="index.html"
+       aria-label="Toy Haven home">
+        🧸 Toy Haven
+    </a>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="navLinks" aria-label="Main navigation">
+
+        <a class="active" href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            Wishlist
+        </a>
+
+        <a href="cart.html">
+            Cart (<span id="cartCount">0</span>)
+        </a>
+
+        <a href="support.html">
+            Support
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO SLIDER -->
+
+    <section
+        class="hero"
+        id="heroBanner"
+        aria-label="Toy Haven promotions">
+
+        <div class="hero-slider">
+
+            <!-- SLIDE 1 -->
+
+            <article class="hero-slide active">
+
+                <div class="hero-content">
+
+                    <p class="label">
+                        COLLECTIBLE FIGURINES
+                    </p>
+
+                    <h1>
+                        Discover Amazing
+                        <span>Figurines</span>
+                    </h1>
+
+                    <p>
+                        Bring your favourite characters and collectible
+                        figures to life. Start building your collection today.
+                    </p>
+
+                    <a
+                        class="btn"
+                        href="products.html?category=Figurines">
+                        Shop Figurines
+                    </a>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="images/product1.jpg"
+                            alt="Anime Hero Figurine">
+
+                    </div>
+
+                    <div class="hero-floating-card">
+                        ⭐ Collector Favourite
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SLIDE 2 -->
+
+            <article class="hero-slide">
+
+                <div class="hero-content">
+
+                    <p class="label">
+                        FUN & ADVENTURE
+                    </p>
+
+                    <h1>
+                        Explore Fun
+                        <span>Toys</span>
+                    </h1>
+
+                    <p>
+                        Discover exciting toys made for play,
+                        imagination and unforgettable moments.
+                    </p>
+
+                    <a
+                        class="btn"
+                        href="products.html?category=Toys">
+                        Shop Toys
+                    </a>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="images/product3.jpg"
+                            alt="Galaxy Explorer Toy">
+
+                    </div>
+
+                    <div class="hero-floating-card">
+                        🚀 Ready for Adventure
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SLIDE 3 -->
+
+            <article class="hero-slide">
+
+                <div class="hero-content">
+
+                    <p class="label">
+                        GAME NIGHT
+                    </p>
+
+                    <h1>
+                        Game Night
+                        <span>Starts Here</span>
+                    </h1>
+
+                    <p>
+                        Challenge your friends and family with
+                        classic and exciting board games.
+                    </p>
+
+                    <a
+                        class="btn"
+                        href="products.html?category=Board%20Games">
+                        Shop Board Games
+                    </a>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="images/product4.jpg"
+                            alt="Strategy Board Game">
+
+                    </div>
+
+                    <div class="hero-floating-card">
+                        🎲 Let the Games Begin
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SLIDE 4 -->
+
+            <article class="hero-slide">
+
+                <div class="hero-content">
+
+                    <p class="label">
+                        COLLECTOR'S GARAGE
+                    </p>
+
+                    <h1>
+                        Collect
+                        <span>Diecast Cars</span>
+                    </h1>
+
+                    <p>
+                        Discover detailed diecast models and legendary
+                        cars made for collectors and racing fans.
+                    </p>
+
+                    <a
+                        class="btn"
+                        href="products.html?category=Diecast%20Cars">
+                        Shop Diecast Cars
+                    </a>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+                    <div class="hero-image-card">
+
+                        <img
+                            src="images/product5.jpg"
+                            alt="Hot Wheels Diecast Car">
+
+                    </div>
+
+                    <div class="hero-floating-card">
+                        🏎️ Built for Collectors
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ARROWS -->
+
+            <button
+                class="hero-arrow hero-prev"
+                id="heroPrev"
+                aria-label="Previous banner">
+                ‹
+            </button>
+
+            <button
+                class="hero-arrow hero-next"
+                id="heroNext"
+                aria-label="Next banner">
+                ›
+            </button>
+
+
+            <!-- DOTS -->
+
+            <div
+                class="hero-dots"
+                id="heroDots"
+                aria-label="Promotion controls">
+
+                <button
+                    class="hero-dot active"
+                    data-slide="0"
+                    aria-label="Show figurines banner">
+                </button>
+
+                <button
+                    class="hero-dot"
+                    data-slide="1"
+                    aria-label="Show toys banner">
+                </button>
+
+                <button
+                    class="hero-dot"
+                    data-slide="2"
+                    aria-label="Show board games banner">
+                </button>
+
+                <button
+                    class="hero-dot"
+                    data-slide="3"
+                    aria-label="Show diecast cars banner">
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+
+        <div class="heading">
+
+            <p class="label">
+                EXPLORE
+            </p>
+
+            <h2>
+                Shop By Category
+            </h2>
+
+            <p>
+                Find something exciting for every collection.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <a
+                class="category-card"
+                href="products.html?category=Figurines">
+
+                <span>🦸</span>
+
+                <h3>
+                    Figurines
+                </h3>
+
+                <p>
+                    Collectible characters
+                </p>
+
+            </a>
+
+
+            <a
+                class="category-card"
+                href="products.html?category=Toys">
+
+                <span>🚗</span>
+
+                <h3>
+                    Toys
+                </h3>
+
+                <p>
+                    Fun for every age
+                </p>
+
+            </a>
+
+
+            <a
+                class="category-card"
+                href="products.html?category=Board%20Games">
+
+                <span>🎲</span>
+
+                <h3>
+                    Board Games
+                </h3>
+
+                <p>
+                    Play together
+                </p>
+
+            </a>
+
+
+            <a
+                class="category-card"
+                href="products.html?category=Diecast%20Cars">
+
+                <span>🏎️</span>
+
+                <h3>
+                    Diecast Cars
+                </h3>
+
+                <p>
+                    Miniature machines
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCTS -->
+
+    <section class="section">
+
+        <div class="heading">
+
+            <p class="label">
+                HOT PICKS
+            </p>
+
+            <h2>
+                Featured Products
+            </h2>
+
+            <p>
+                Check out some of our most popular collectibles.
+            </p>
+
+        </div>
+
+
+        <div
+            class="product-grid"
+            id="featured-products">
+
+            <div class="loading-card">
+                Loading featured products...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div>
+
+            <p class="label">
+                TOY HAVEN COLLECTION
+            </p>
+
+            <h2>
+                Ready to Start Collecting?
+            </h2>
+
+            <p>
+                Explore the complete Toy Haven collection.
+            </p>
+
+        </div>
+
+
+        <a
+            class="btn light"
+            href="products.html">
+            View All Products
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div>
+
+        <h3>
+            🧸 Toy Haven
+        </h3>
+
+        <p>
+            Your home for toys, collectibles and fun.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Quick Links
+        </h3>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            Wishlist
+        </a>
+
+        <a href="support.html">
+            Support
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Newsletter
+        </h3>
+
+        <form
+            id="newsletterForm"
+            novalidate>
+
+            <input
+                id="newsletterEmail"
+                type="email"
+                placeholder="Your email"
+                aria-label="Email address"
+                required>
+
+            <button
+                class="btn"
+                type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+        <p
+            id="newsletterMessage"
+            class="message"
+            role="status">
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+

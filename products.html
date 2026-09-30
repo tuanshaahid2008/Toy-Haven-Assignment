@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Products | Toy Haven
+    </title>
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">
+        🧸 Toy Haven
+      </a>
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+      <nav id="navLinks">
+        <a href="index.html">
+          Home
+        </a>
+        <a class="active" href="products.html">
+          Products
+        </a>
+        <a href="wishlist.html">
+          Wishlist
+        </a>
+        <a href="cart.html">
+          Cart (
+          <span id="cartCount">
+            0
+          </span>
+          )
+        </a>
+        <a href="support.html">
+          Support
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <p class="label">
+          TOY HAVEN COLLECTION
+        </p>
+        <h1>
+          All Products
+        </h1>
+        <p>
+          Find something special for your collection.
+        </p>
+      </section>
+      <section class="section">
+        <div class="toolbar">
+          <div class="search">
+            <span>
+              🔎
+            </span>
+            <input id="productSearch" placeholder="Search products..." type="search"/>
+          </div>
+          <div class="filters" id="categoryFilters">
+            <button class="filter active" data-category="All">
+              All
+            </button>
+            <button class="filter" data-category="Figurines">
+              Figurines
+            </button>
+            <button class="filter" data-category="Toys">
+              Toys
+            </button>
+            <button class="filter" data-category="Board Games">
+              Board Games
+            </button>
+            <button class="filter" data-category="Diecast Cars">
+              Diecast Cars
+            </button>
+          </div>
+        </div>
+        <p class="muted" id="productResultCount">
+        </p>
+        <div class="product-grid" id="productGrid">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <h3>
+          🧸 Toy Haven
+        </h3>
+        <p>
+          Collect. Play. Enjoy.
+        </p>
+      </div>
+      <div>
+        <h3>
+          Quick Links
+        </h3>
+        <a href="index.html">
+          Home
+        </a>
+        <a href="wishlist.html">
+          Wishlist
+        </a>
+        <a href="support.html">
+          Support
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js">
+    </script>
+  </body>
+</html>
